@@ -1,0 +1,28 @@
+@use '../abstracts/variables' as var;
+@use '../abstracts/functions' as func;
+
+.section__head,
+.section__body {
+	display: grid;
+}
+
+.section {
+	display: inline-grid;
+	gap: func.em(40, var.$font-size-primary);
+	max-width: func.em(420, var.$font-size-primary);
+	margin: func.em(50, var.$font-size-primary) 0
+		func.em(40, var.$font-size-primary);
+}
+
+@media (min-width: 48em) {
+	.section {
+		gap: func.em(60, var.$font-size-primary);
+		max-width: func.em(1110, var.$font-size-primary);
+		margin: func.em(70, var.$font-size-primary) 0
+			func.em(60, var.$font-size-primary);
+	}
+
+	.section__head {
+		justify-items: center;
+	}
+}
