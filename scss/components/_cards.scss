@@ -29,10 +29,11 @@
 }
 
 .card {
-	grid-template-rows: min-content min-content auto;
 	position: relative;
+	grid-template-rows: min-content min-content auto;
+	gap: func.em(10, var.$font-size-primary);
 	min-height: func.em(220, var.$font-size-primary);
-	padding: func.em(24, var.$font-size-primary);
+	padding: func.em(28, var.$font-size-primary);
 	background-color: var.$color-white;
 	border-radius: 8px;
 	box-shadow: 0 15px 20px rgba(0, 0, 0, 0.1);
@@ -65,10 +66,6 @@
 	background-color: var.$color-blue;
 }
 
-.card__title {
-	margin-bottom: func.em(8, 20);
-}
-
 .card__desc {
 	font-size: func.em(13, var.$font-size-primary);
 }
@@ -83,7 +80,7 @@
 	height: func.em(56, var.$font-size-primary);
 }
 
-@media (min-width: 48em) {
+@media (min-width: 57.5em) {
 	.cards-summary {
 		max-width: func.em(540, var.$font-size-primary);
 	}
@@ -95,6 +92,11 @@
 
 	.cards-summary__subtitle {
 		margin-bottom: func.em(16, 36);
+	}
+
+	.cards,
+	.cards__block {
+		gap: func.em(30, var.$font-size-primary);
 	}
 
 	.cards {
