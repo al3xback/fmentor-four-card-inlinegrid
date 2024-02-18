@@ -9,6 +9,7 @@
 .section {
 	display: inline-grid;
 	gap: func.em(40, var.$font-size-primary);
+	width: 100%;
 	max-width: func.em(340, var.$font-size-primary);
 	margin: func.em(50, var.$font-size-primary) 0
 		func.em(40, var.$font-size-primary);
